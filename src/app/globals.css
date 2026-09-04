@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbfaf6;
+  --foreground: #14231c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .flag-stripe {
+    background: linear-gradient(
+      to bottom,
+      theme("colors.cherry.600") 0%,
+      theme("colors.cherry.600") 22%,
+      #ffffff 22%,
+      #ffffff 78%,
+      theme("colors.cherry.600") 78%,
+      theme("colors.cherry.600") 100%
+    );
+  }
+}
